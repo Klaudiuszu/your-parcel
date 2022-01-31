@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="./style.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+  <title>Document</title>
+</head>
+<body>
+  <navbar>
+    <ul class="navList">
+      <li class="navItem">
+        <i class="fas fa-search"></i>
+      </li>
+      <li class="navItem">
+        <a href="#">Oferta dla firm</a>
+      </li>
+      <li class="navItem">
+        <a href="#">Cennik</a>
+      </li>
+      <li class="navItem">
+        <a href="#">Kontakt</a>
+      </li>
+    </ul>
+  </navbar>>
+  <section class="container" >
+
+    <div class="center" id="welcome-button">
+      <button class="normal-button">Check Order</button>
+    </div>
+
+    <div  id="input-form" style="display:none;">
+      <button class="normal-button">NEW SECTION</button>
+      <form>
+          <label for="phone-number" >Phone number</label>
+          <input id="phone-number" maxlength="8" type="text" />
+          <label for="delivery-code">Kod odbioru</label>
+          <input id="delivery-code" type="text"  maxlength="4" />
+      </form>
+    </div>
+
+  </section>
+  <script src="main.js"></script>
+</body>
+</html>
