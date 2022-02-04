@@ -152,3 +152,28 @@ i:hover{
   color:rosybrown;
   transition-duration: .3s;
 }
+
+.footer {
+  position: absolute;
+  bottom: 0;
+  display: flex;
+  justify-content: space-around;
+  align-content: space-around;
+}
+
+.sites-box {
+  display: flex;
+  justify-content:flex-end;
+}
+
+.sites-box .sites {
+  flex-direction: row;
+  color: #2B2B28;
+  font-size: 42px;
+  margin: 0 4px;
+}
+
+.foot-text {
+  font-size: 12px;
+  margin-right: 20px;
+}
