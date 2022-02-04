@@ -7,6 +7,7 @@ const form = document.querySelector(".check-order");
 const search = document.querySelector("#search");
 const noDelivery = document.querySelector(".no-delivery");
 const refresh = document.querySelector("i");
+const pickUp = document.querySelector(".pick-up");
 
 // to utils
 const numericInputUpdate = (input, alertMessage) => {
@@ -57,5 +58,11 @@ function refreshElements () {
 });
 };
 
+function pickUpDelivery () {
+  
+console.log()
+}
+
 checkOrder();
 refreshElements();
+pickUpDelivery();
