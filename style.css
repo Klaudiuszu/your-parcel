@@ -42,17 +42,19 @@ body{
 
 
 .container{
-  position: absolute;
-  top:50%;
-  left:50%;
-  transform: translate(-50%, -50%);
+    max-width: 1114px;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
 }
 
 .center {
-  display: flex;
+  position: absolute;
   text-align: center;
-  align-items: center;
-  justify-content: center;
+  right: 0;
+  left: 0;
+  bottom: 50%;
 }
 
 .normal-button{
@@ -100,28 +102,21 @@ body{
   background: #E7D2CC;
 }
 
-.check-order{
-  display: flex;
-  justify-content: center;
-}
-
-
-input {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-size: 20px;
-  box-sizing: border-box;
+#input-form {
+  position: absolute;
+  bottom: 50%;
+  text-align: center;
+  right: 0;
+  left: 0;
 }
 
 .no-delivery {
+  position: absolute;
+  bottom: 50%;
   text-align: center;
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  align-items: center;
-  background-attachment: fixed;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  right: 0;
+  left: 0;
+  top: 25%;
 }
 
 .fas{
@@ -130,11 +125,20 @@ input {
   align-items: center;
 }
 
+.pick-up {
+  position: absolute;
+  bottom: 50%;
+  text-align: center;
+  right: 0;
+  left: 0;
+  top: 25%;
+}
+
 img {
-  width: 500px;
-  height: 500px;
-  opacity: 0.5;
-  
+  width: 380px;
+  background: #fff;
+  box-shadow: 4px 4px 8px 4px rgba(0, 0, 0, 0.2), 6px 6px 20px 6px rgba(0, 0, 0, 0.19);
+  filter: blur(0.5px);
 }
 img:hover {
   transform: scaleX(-1);

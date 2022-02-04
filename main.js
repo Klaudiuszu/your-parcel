@@ -24,7 +24,7 @@ const numericInputUpdate = (input, alertMessage) => {
 function checkOrder() {
   btn1.addEventListener("click", (_) => {
     welcomeScreen.style.display = "none";
-    inputForm.style.display = "flex";
+    inputForm.style.display = "block";
   });
 
   numericInputUpdate(phoneNumberInput, "phoneAlert");
@@ -40,29 +40,31 @@ function checkOrder() {
     );
 
     if(!condition === true){
-      noDelivery.style.display = "flex"
-    }
+      noDelivery.style.display = "block"
+      inputForm.style.display = "none";
+    } else if(pickUp.style.display = "none") {
+      pickUp.style.display = "block"
+      inputForm.style.display = "none";
+
+    } 
   });
 };
 
 function refreshElements () {
 
-  refresh.addEventListener("click", (_) => {
+  refresh.addEventListener("click", () => {
    // event.preventDefault();
     
-      welcomeScreen.style.display = "flex";
+      welcomeScreen.style.display = "block";
       inputForm.style.display = "none";
-      noDelivery.style.display = "none"
+      noDelivery.style.display = "none";
+      pickUp.style.display = "none";
     
 
 });
 };
 
-function pickUpDelivery () {
-  
-console.log()
-}
+
 
 checkOrder();
 refreshElements();
-pickUpDelivery();

@@ -9,32 +9,39 @@
   <title>Document</title>
 </head>
 <body>
-  <navbar>
-    <ul class="navList">
-      <li class="navItem">
-        <i class="fas fa-sync-alt"></i>
-      </li>
-      <li class="navItem">
-        <a href="#">Oferta dla firm</a>
-      </li>
-      <li class="navItem">
-        <a href="#">Cennik</a>
-      </li>
-      <li class="navItem">
-        <a href="#">Kontakt</a>
-      </li>
-    </ul>
-  </navbar>
+  
   <section class="container" >
+
+    <navbar>
+      <ul class="navList">
+        <li class="navItem">
+          <i class="fas fa-sync-alt"></i>
+        </li>
+        <li class="navItem">
+          <a href="#">Oferta dla firm</a>
+        </li>
+        <li class="navItem">
+          <a href="#">Cennik</a>
+        </li>
+        <li class="navItem">
+          <a href="#">Kontakt</a>
+        </li>
+      </ul>
+    </navbar>
+    
+  </section >
+
+  <section class="container"> 
 
     <div class="center" id="welcome-button">
       <button class="normal-button">Check Order</button>
     </div>
-
+  
     <div class="pick-up" style="display:none;" >
       <h3>Brawo! Przesyłka została odebrana!</h3>
+      <img src="/image/pick-up.png">
     </div>
-
+  
     <div  id="input-form" style="display:none;">
       <form class="check-order">
           <!-- add label -->
@@ -44,13 +51,11 @@
           <input id="search" type="submit" name="" value="Search"/>
       </form>
     </div>
-
+  
     <div class="no-delivery" style="display:none">
       <h3>Ops! Błędnie wpisany numer telefonu lub kod odbioru. Spróbuj ponownie</h3>
       <img src="/image/waiting-image.jpg">
     </div>
-    
-
   </section>
   <script src="data.js"></script>
   <script src="main.js"></script>
