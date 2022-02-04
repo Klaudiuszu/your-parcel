@@ -12,7 +12,7 @@
   <navbar>
     <ul class="navList">
       <li class="navItem">
-        <i class="fas fa-search"></i>
+        <i class="fas fa-sync-alt"></i>
       </li>
       <li class="navItem">
         <a href="#">Oferta dla firm</a>
@@ -37,9 +37,15 @@
           <input id="phone-number" placeholder="Phone Number" maxlength="9" type="text" />
           <!-- add label -->
           <input id="delivery-code" placeholder="Code" type="text"  maxlength="4" />
-          <input type="submit" name="" value="Search"/>
+          <input id="search" type="submit" name="" value="Search"/>
       </form>
     </div>
+
+    <div class="no-delivery" style="display:none">
+      <h3>Ops! Błędnie wpisany numer telefonu lub kod odbioru. Spróbuj ponownie</h3>
+      <img src="/image/waiting-image.jpg">
+    </div>
+    
 
   </section>
   <script src="data.js"></script>

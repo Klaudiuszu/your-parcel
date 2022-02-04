@@ -3,8 +3,8 @@ const dataSource = {
   // find.
   // (item) =>
   [{
-    number: 123456789,
-    code: 1234
+    number: 1,
+    code: 1
   },{
     number: 876543210,
     code: 0000

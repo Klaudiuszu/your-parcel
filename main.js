@@ -4,6 +4,9 @@ const inputForm = document.querySelector("#input-form");
 const phoneNumberInput = document.querySelector("#phone-number");
 const deliveryCodeInput = document.querySelector("#delivery-code");
 const form = document.querySelector(".check-order");
+const search = document.querySelector("#search");
+const noDelivery = document.querySelector(".no-delivery");
+const refresh = document.querySelector("i");
 
 // to utils
 const numericInputUpdate = (input, alertMessage) => {
@@ -16,14 +19,16 @@ const numericInputUpdate = (input, alertMessage) => {
   });
 };
 
+
 function checkOrder() {
   btn1.addEventListener("click", (_) => {
     welcomeScreen.style.display = "none";
-    inputForm.style.display = "block";
+    inputForm.style.display = "flex";
   });
 
   numericInputUpdate(phoneNumberInput, "phoneAlert");
   numericInputUpdate(deliveryCodeInput, "deliveryAlert");
+
 
   form.addEventListener("submit", (event) => {
     event.preventDefault();
@@ -33,9 +38,24 @@ function checkOrder() {
         client.code === parseInt(deliveryCodeInput.value)
     );
 
-    console.log(condition)
-
+    if(!condition === true){
+      noDelivery.style.display = "flex"
+    }
   });
-}
+};
+
+function refreshElements () {
+
+  refresh.addEventListener("click", (_) => {
+   // event.preventDefault();
+    
+      welcomeScreen.style.display = "flex";
+      inputForm.style.display = "none";
+      noDelivery.style.display = "none"
+    
+
+});
+};
 
 checkOrder();
+refreshElements();
